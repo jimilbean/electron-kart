@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="img/main_left1.png" alt="">
+    <img src="img/main_right1.png" alt="">
+    <header>
+      <div class="img-logo">
+        <img src="img/kart_logo_sub_v1.png" alt="">
+      </div>
+      <div class="logo">
+        <h1>카트라이더 전적 검색</h1>
+      </div>
+      <div class="input">
+        <input type="text" name="user" id="user" placeholder="카트라이더 닉네임 입력">
+        <button id="submit">검색</button>
+      </div>
+    </header>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+</html>
