@@ -27,6 +27,20 @@
       </div>
     </header>
   </div>
+  
+  <script>
+
+      async function init() {
+        let datas = await getJSON('metadata/track.json');
+        console.log(datas);
+      }
+
+      async function getJSON(url){ 
+        return await fetch(url).then(r => r.json());
+      }
+
+      init();
+  </script>
   <!-- You can also require other files to run in this process -->
   <script src="./renderer.js"></script>
 </body>
